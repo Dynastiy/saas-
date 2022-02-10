@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+html, body, * {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+:root {
+    --primary-color: #2f2a5f;
+  --secondary-color: #9286ff;
+  --tertiary-color: #b5adfd;
+  --accent-color: #7363ff0e;
+  --light-color: #7363ff10;
+  --dark-color: #000;
+  --light-color: #fff;
+  }
+  
+.home__hero {
+    background: url(https://static.vecteezy.com/system/resources/previews/002/159/147/large_2x/3d-background-products-minimal-podium-scene-with-geometric-platform-background-3d-rendering-with-podium-stand-to-show-cosmetic-products-stage-showcase-on-pedestal-modern-studio-blue-pastel-vector.jpg);
+    background-size: cover;
+    background-position: bottom;
+      
+}
+  .hero__section {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      height: 100vh;
+      align-items: center;
+  }
+
+  .hero__section h1 {
+      font-size: 8rem;
+  }
+  .hero__section .one {
+    stroke: var(--primary-color);
+    stroke-width: 5px;
+    position: absolute;
+    bottom: 7rem;
+    width: max-content;
+    height: max-content;
+    height: 50px;
+    width: 500px;
+  }
+  .btn__login {
+      background-color: var(--primary-color) !important;
+        color: var(--light-color) !important;
+        border-radius: 0 !important;
+        font-size: 0.8rem !important;
+        -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  }
+  .btn__register {
+    border: 1px solid var(--primary-color) !important;
+      color: var(--primary-color    ) !important;
+      border-radius: 0 !important;
+      font-size: 0.8rem !important;
+      -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.view-more-button {
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color    ) !important;
+    border-radius: 0 !important;
+    background-color: var(--light-color);
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem !important;
+    -webkit-transition: all 0.4s;
+-o-transition: all 0.4s;
+-moz-transition: all 0.4s;
+transition: all 0.4s;
+}
+.view-more-button:hover{
+    background-color: var(--primary-color) !important;
+        color: var(--light-color) !important;
+        border-radius: 0 !important;
+        font-size: 0.8rem !important;
+        -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn__login:hover {
+    border: 1px solid var(--primary-color) !important;
+      color: var(--primary-color    ) !important;
+      background-color: var(--light-color) !important;
+      border-radius: 0 !important;
+      font-size: 0.8rem !important;
+      -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn__register:hover{
+    background-color: var(--primary-color) !important;
+        color: var(--light-color) !important;
+        border-radius: 0 !important;
+        font-size: 0.8rem !important;
+        -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+ul.nav__menu{
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    gap: 20px;
+}
+ul.nav__menu a {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+}
+ul.nav__menu .router-link-exact-active {
+     background-color: var(--primary-color);
+    color: var(--light-color);
+    text-decoration: none;
+}
+table tr, table td {
+    font-size: 0.8rem;
+}
+.mobile__nav {
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 999;
+    padding: 1rem;
+    top: 0;
+    left: -1000px;
+    transition: 0.4s;
+    min-height: 100%;
+}
+.mobile__nav.active {
+    left: 0;
+}
+.mobile__nav ul a{
+    font-size: 0.9rem;
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+}
+@media (max-width: 990px){
+    .hero__section{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .hero__section h1 {
+        font-size: 4rem;
+    }
+    .ul.nav__menu {
+        display: flex;
+        flex-direction:row;
+    }
+    .dashboard-header {
+        display: none;
+    }
+}
+  
